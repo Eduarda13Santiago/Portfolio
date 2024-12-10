@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Jacques+Francois&display=swap');
+
+* {
+    padding: 0;
+    /*Padding é para por espaçamento interno em um elemento*/
+ 
+    margin: 0;
+    /*Margin é para por espaçamento externo em um elemento*/
+
+    
+    box-sizing: border-box;
+   font-family: "Jacques Francois", sans-serif;
+
+   list-style: none;
+   text-decoration: none;
+}
+
+
+
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --roxo_principal: #782BB3;
+    --roxo_testado: #8609E6;
+    --roxo_claro: #A757E5;
+    --roxo_meio: #693193;
+    --roxo_morto: #523469;
+    --roxo_escuro: #200F2D;
+
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+
+.grid_banner{
+    width: 80%;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
