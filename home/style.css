@@ -18,20 +18,20 @@ header {
     /* height: ; */
     font-size: 20px;
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     flex-direction: row;
 }
 
-.texto a{
+.texto a {
     color: var(--branco);
 }
 
-.icones_header{
+.icones_header {
     display: flex;
     gap: 30px;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
@@ -40,46 +40,141 @@ header {
 /* COMEÇANDO BANNER */
 
 
-#banner{
+#banner {
     width: 100%;
     height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
+    background-image: url(../assets/image/triangulo.png);
+    background-repeat: no-repeat;
 }
 
-#banner h1{
+#banner h2 {
     font-size: 64px;
+    font-weight: bolder;
 }
 
-#banner h3{
-    position: absolute;
-    top: 500px;
-    left: 550px;
-    font-size: 40px;
+#banner h3 {
+    font-size: 30px;
+    font-weight: lighter;
 }
 
+#banner button {
+    margin-top: 20px;
+    padding: 12px;
 
+    border: none;
+    border-radius: 15px;
+    color: var(--branco);
+    background-color: #8609E6;
+}
 
+#banner button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
 
+.titulo {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
 
-
-
-
-
-
-
-
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
 /* BANNER FINALIZADO */
 
-@media screen and (max-width: 768px){
-   .texto, .modo_claro{
+/* COMENCANDO SOBRE */
+
+#sobre {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.textos_sobre h2 {
+    margin-bottom: 50px;
+}
+
+.textos_sobre p,
+span {
+    width: 70%;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* SOBRE FINALIZADO */
+
+#tecnologias{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tecnologias{
+    background-color: rgb(0, 255, 34);
+
+    width: 200px;
+    min-width: 200px;
+
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto_tech{
+    font-size: 28px;
+}
+
+.tech{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1085px) {
+    .grid_banner {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px
+    }
+
+    .grid_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #sobre img {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .texto,
+    .modo_claro {
         display: none;
     }
 
-    .menu{
+    .menu {
         display: flex;
     }
 }

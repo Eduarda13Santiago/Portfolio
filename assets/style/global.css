@@ -26,7 +26,6 @@
     --roxo_meio: #693193;
     --roxo_morto: #523469;
     --roxo_escuro: #200F2D;
-
 }
 
 body {
@@ -41,5 +40,23 @@ body {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.grid_sobre{
+    width: 80%;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_tecnologias{
+    width: 80%;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
