@@ -3,16 +3,16 @@
 * {
     padding: 0;
     /*Padding é para por espaçamento interno em um elemento*/
- 
+
     margin: 0;
     /*Margin é para por espaçamento externo em um elemento*/
 
-    
-    box-sizing: border-box;
-   font-family: "Jacques Francois", sans-serif;
 
-   list-style: none;
-   text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Jacques Francois", sans-serif;
+
+    list-style: none;
+    text-decoration: none;
 }
 
 
@@ -34,7 +34,7 @@ body {
 }
 
 
-.grid_banner{
+.grid_banner {
     width: 80%;
     background-color: transparent;
 
@@ -43,7 +43,7 @@ body {
     align-items: center;
 }
 
-.grid_sobre{
+.grid_sobre {
     width: 80%;
     background-color: transparent;
 
@@ -52,11 +52,28 @@ body {
     align-items: center;
 }
 
-.grid_tecnologias{
+.grid_tecnologias {
     width: 80%;
     background-color: transparent;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+
+    .grid_banner {
+        width: 70%;
+    }
+
+    .grid_sobre {
+        width: 70%;
+        margin-top: 270px;
+   
+    }
+
+    .grid_tecnologias {
+        width: 70%;}
+
 }
