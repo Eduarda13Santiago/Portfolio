@@ -116,7 +116,7 @@ span {
 /* SOBRE FINALIZADO */
 
 #tecnologias {
-    height: 100vh;
+    /* height: 100vh; */
 
     display: flex;
     flex-direction: column;
@@ -162,6 +162,7 @@ span {
     gap: 30px;
     justify-content: space-between;
 }
+
 #contato{
     width: 100%;
     background-color: transparent;
@@ -170,16 +171,30 @@ span {
     justify-content: space-around;
 
     margin-top: 50px;
+
+    
 }
 
 #contato img{
     width: 400px;
 }
+
 .contate-nos{
     height: 200px;
-    /* padding:  1px 1 px; */
     background-color: var(--roxo_testado);
     border-radius: 13px;
+    display: flex;
+    /* align-items: center; */
+
+    padding: 10px;
+}
+.coluna_contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.linha_contato{
     display: flex;
     flex-direction: row;
 }
