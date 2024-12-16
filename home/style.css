@@ -145,9 +145,12 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-
+.icon_tech{
+     /* width: 90px;
+     height: 95px; */
+}
 .texto_tech {
     font-size: 20px;
 }
@@ -178,7 +181,7 @@ span {
     background-color: var(--roxo_testado);
     border-radius: 13px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 1085px) {
