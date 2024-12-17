@@ -48,7 +48,7 @@ header {
     align-items: center;
 
     background-image: url(../assets/image/triangulos\ 1.png);
-   
+
     background-repeat: no-repeat;
 }
 
@@ -121,14 +121,14 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 
 }
 
 #tecnologias h2 {
     margin-bottom: 60px;
     margin-right: 900px;
-    
+
 }
 
 
@@ -147,10 +147,12 @@ span {
     align-items: center;
     justify-content: space-evenly;
 }
-.icon_tech{
-     /* width: 90px;
+
+.icon_tech {
+    /* width: 90px;
      height: 95px; */
 }
+
 .texto_tech {
     font-size: 20px;
 }
@@ -163,7 +165,7 @@ span {
     justify-content: space-between;
 }
 
-#contato{
+#contato {
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -172,32 +174,54 @@ span {
 
     margin-top: 50px;
 
-    
+
 }
 
-#contato img{
+#contato img {
     width: 400px;
 }
 
-.contate-nos{
-    height: 200px;
-    background-color: var(--roxo_testado);
+.contate-nos {
+    height: 300px;
+    background-color: var(--roxo_principal);
     border-radius: 13px;
     display: flex;
     /* align-items: center; */
 
-    padding: 10px;
-}
-.coluna_contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 20px;
 }
 
-.linha_contato{
+.coluna_contato {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.linha_contato {
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
+   
 }
+
+.coluna_contato>h2 {
+    font-size: 36px;
+    /* width:0px; */
+    font-weight: 100;
+}
+
+.linha_contato>button {
+    width: 220px;
+    height: 50px;
+    border-radius: 13px;
+    color: var(--roxo_claro);
+    border: none;
+    font-size: 20px;
+    /* margin-top: 150px; */
+  
+}
+
 
 @media screen and (max-width: 1085px) {
     .grid_banner {
