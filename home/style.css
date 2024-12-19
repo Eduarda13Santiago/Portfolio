@@ -23,7 +23,12 @@ header {
 }
 
 .texto a {
+    transition: 0.2s ease;
     color: var(--branco);
+}
+
+.texto a:hover {
+    color: var(--roxo_claro);
 }
 
 .icones_header {
@@ -48,7 +53,7 @@ header {
     align-items: center;
 
     background-image: url(../assets/image/triangulos\ 1.png);
-
+   
     background-repeat: no-repeat;
 }
 
@@ -121,14 +126,14 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
 #tecnologias h2 {
     margin-bottom: 60px;
     margin-right: 900px;
-
+    
 }
 
 
@@ -147,12 +152,10 @@ span {
     align-items: center;
     justify-content: space-evenly;
 }
-
-.icon_tech {
-    /* width: 90px;
+.icon_tech{
+     /* width: 90px;
      height: 95px; */
 }
-
 .texto_tech {
     font-size: 20px;
 }
@@ -165,7 +168,7 @@ span {
     justify-content: space-between;
 }
 
-#contato {
+#contato{
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -173,55 +176,134 @@ span {
     justify-content: space-around;
 
     margin-top: 50px;
-
-
 }
 
-#contato img {
+#contato img{
     width: 400px;
 }
 
-.contate-nos {
-    height: 300px;
+.contate-nos{
     background-color: var(--roxo_principal);
-    border-radius: 13px;
-    display: flex;
-    /* align-items: center; */
+    /* width: 500px; */
+    width: 35vw;
+    height: 250px;
+
+    border-radius: 12px;
 
     padding: 20px;
 }
 
-.coluna_contato {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.linha_contato {
+.linha_contato{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-   
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 40px;
 }
 
-.coluna_contato>h2 {
-    font-size: 36px;
-    /* width:0px; */
-    font-weight: 100;
+.coluna_contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.linha_contato>button {
-    width: 220px;
-    height: 50px;
-    border-radius: 13px;
-    color: var(--roxo_claro);
+.coluna_contato > h2{
+    margin: 20px 0px;
+}
+
+.coluna_contato > p{
+    width: 200px;
+    text-align: center;
+}
+
+.linha_contato > button{
+    height: auto;
+    width: 50%;
+
+    color: var(--roxo_principal);
+    background-color: var(--branco);
+    border-radius: 12px;
+    outline: none;
     border: none;
+    padding: 10px;
+
     font-size: 20px;
-    /* margin-top: 150px; */
-  
+
+    transition: 0.2s ease;
 }
 
+.linha_contato > button:hover{
+    cursor: pointer;
+
+    background-color: var(--roxo_morto);
+    color: var(--branco);
+}
+
+footer{
+    /* background-color: red; */
+    height: 40vh;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navegacao_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegacao_footer > a{
+    font-size: 18px;
+    color: var(--branco);
+}
+
+.icones_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    fill: var(--roxo_principal);
+}
+
+.icones_footer > p{
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+.row_icon{
+    width: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.agradecimento{
+    width: 220px;
+}
+
+.logo_footer{
+    width: 300px;
+}
+
+
+@media screen and (max-width: 1145px){
+    .grid_contato{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contate-nos{
+        margin-top: 50px;
+    }
+}
 
 @media screen and (max-width: 1085px) {
     .grid_banner {
@@ -237,7 +319,6 @@ span {
         flex-direction: column;
     }
 
-
     #sobre img {
         width: 250px;
         margin-top: 30px;
@@ -248,8 +329,6 @@ span {
         margin-top: 311px;
         /* height: 500px; */
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -281,7 +360,6 @@ span {
     #tecnologias {
         margin-top: 680px;
         gap: 60px;
-
     }
 
     .tech {
@@ -289,6 +367,13 @@ span {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 40px;
+    }
+
+    .grid_footer {
+        display: flex;
+        flex-direction: column !important;
+        gap: 50px;
+        margin: 50px 0px;
     }
 }
 
@@ -344,7 +429,6 @@ span {
         display: flex;
         align-items: center;
         flex-direction: column;
-
     }
 
     .textos_sobre p,

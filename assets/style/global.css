@@ -28,6 +28,10 @@
     --roxo_escuro: #200F2D;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--preto);
     color: var(--branco);
@@ -69,6 +73,17 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
+.grid_footer{
+    width: 80%;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 425px) {
 
