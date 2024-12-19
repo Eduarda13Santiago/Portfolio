@@ -3,7 +3,7 @@
     height: 64px;
     padding: 2% 5%;
 
-    background-color: var(--preto);
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +24,11 @@
 
 .texto a {
     transition: 0.2s ease;
-    color: var(--branco);
+    color: var(--preto);
 }
 
 .texto a:hover {
-    color: var(--roxo_claro);
+    color: var(--roxo_escuro);
 }
 
 .icones_header {
@@ -36,14 +36,14 @@
     gap: 30px;
 }
 
-.modo_escuro{
+.modo_claro{
     background: none;
-    color: white;
+    color: black;
     border: none;
 
 }
 
-.modo_escuro:hover{
+.modo_claro:hover{
     cursor: pointer;
     scale: 1.1;
     
@@ -155,7 +155,7 @@ span {
     width: 250px;
     min-width: 200px;
 
-    border: 2px solid var(--branco);
+    border: 2px solid var(--preto);
     border-radius: 10px;
     padding: 12px;
 
@@ -163,6 +163,7 @@ span {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    color: black;
 }
 .icon_tech{
      /* width: 90px;
@@ -197,6 +198,7 @@ span {
 .contate-nos{
     background-color: var(--roxo_principal);
     /* width: 500px; */
+    color: white;
     width: 35vw;
     height: 250px;
 
@@ -271,7 +273,7 @@ footer{
 
 .navegacao_footer > a{
     font-size: 18px;
-    color: var(--branco);
+    color: var(--preto);
 }
 
 .icones_footer{
